@@ -1,0 +1,88 @@
+/*Codificar con CSS*/
+
+*{ /*Selecciona TodosElemento de PaginaWeb y resetea a 0 el margin y padding*/
+    margin: 0px;
+    padding: 0px; /*Margen de arriba, abajo, izquierda y derecha*/
+}
+
+body{ /*Selector de etiqueta*/
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{ /*Selector de id (Solo 1 id de c/u)*/
+    /*width: 70%;*/
+    width: 1100px;
+    margin: 0px auto; /*Centra lo más que pueda*/
+    border: 1px solid black;
+}
+
+header{ /*Como solo hay 1header lo seleccionamos directamente (pueden ser varios)*/
+    background: red;
+    height: 100px;
+    width: 100%;
+    text-align: center; /*Centra Texto horizontalmente*/
+    line-height: 100px; /*Centra Texto verticalmente (100 xq es la cantidad de height)*/
+    color: white;
+    border-bottom: 3px dashed black; /*BordeAbajo (dashed es punteado)*/
+}
+
+nav{ /*Menú*/
+    background: lightblue;
+    height: 50px; /*Necesario para visualizar color*/
+    border-bottom: 1px solid black;
+}
+
+nav ul li{ /*Selecciona todos los "li" de "nav"*/
+    float: left; /*c/u a la izq.*/
+    list-style: none; /*quita estilos que tenga por defecto*/
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{ /*Selector de clase*/
+    clear: both; /*Elementos de abajo quedan en su sitio*/
+}
+
+#content{ /*Contenido*/
+    float: left;
+    width: calc(80% - 80px); /*calc quita 40px de la izq. y 40px de la der.*/
+    min-height: 500px;
+    background: green;
+    padding: 40px;
+}
+
+.article{ /*Artículos*/
+    color: white;
+    margin-top: 15px; /*Margen arriba*/
+    margin-bottom: 15px; /*Margen abajo*/
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article:first-child{ /*Selecciona 1er artículo*/
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2{ /*Selecciona los h2 de todos los artículos*/
+    font-size: 25px; /*Tamaño de fuente*/
+}
+
+aside{ /*Barra Lateral*/
+    float: left;
+    width: calc(20% - 20px);
+    background: orange;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+footer{ /*Pie de página*/
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
